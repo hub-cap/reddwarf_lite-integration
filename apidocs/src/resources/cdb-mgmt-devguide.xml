@@ -142,6 +142,11 @@
     <cover>
         <para>this is a placeholder for the back cover</para>
     </cover>
+    <raxm:metadata xmlns:raxm="http://docs.rackspace.com/api/metadata">
+      <raxm:displayname>API Admin Developer Guide</raxm:displayname>
+      <raxm:product version="v1.0">cdb</raxm:product>
+      <raxm:priority>30</raxm:priority>
+    </raxm:metadata> 
     </info>
     <chapter xml:id="overview">
         <title>Overview</title>
@@ -163,15 +168,10 @@
         <para>The following figure shows an
             overview of Cloud Databases Infrastructure: <informalfigure>
                 <mediaobject>
-                    <imageobject role="fo">
+                    <imageobject>
                         <imagedata
                             fileref="images/Cloud_DB_Infographic-1.svg"
                             contentwidth="6in"/>
-                    </imageobject>
-                    <imageobject role="html">
-                        <imagedata
-                            fileref="images/Cloud_DB_Infographic-1.png"
-                        />
                     </imageobject>
                 </mediaobject>
             </informalfigure>
