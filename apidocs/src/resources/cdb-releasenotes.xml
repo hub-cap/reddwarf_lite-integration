@@ -97,7 +97,7 @@
     	</revhistory>
     <raxm:metadata xmlns:raxm="http://docs.rackspace.com/api/metadata">
       <raxm:product version="v1.0">cdb</raxm:product>
-      <raxm:priority>10</raxm:priority>
+      <raxm:priority>50</raxm:priority>
     </raxm:metadata> 
     </info>
 	<chapter xml:id="doc_change_history">
