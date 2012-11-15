@@ -62,7 +62,7 @@
         </copyright>
         <releaseinfo>API v1.0</releaseinfo>
         <productname>Rackspace Cloud Databases</productname>
-        <pubdate>2012-11-06</pubdate>
+        <pubdate>2012-11-15</pubdate>
         <legalnotice role="rs-api">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
@@ -76,6 +76,21 @@
         </abstract>
         
         <revhistory>
+            <revision>
+                <date>2012-11-15</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para>Updated note about the
+                                   <code>used</code> attribute for
+                                volumes also not being returned when
+                                the status is ERROR (refer to <xref
+                                   linkend="GET_getInstanceById__version___accountId__instances__instanceId__"
+                                /> ).</para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
             <revision>
                 <date>2012-11-06</date>
                 <revdescription>
@@ -101,7 +116,7 @@
                                 />).</para>
                         </listitem>
                         <listitem>
-                            <para>Added section <xref
+                            <para>Added <xref
                                    linkend="synchro_vs_async_faults"
                                 />.</para>
                         </listitem>

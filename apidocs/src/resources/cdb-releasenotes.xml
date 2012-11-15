@@ -26,7 +26,7 @@
 		</copyright>
         <releaseinfo>API v1.0</releaseinfo>
     	<productname>Rackspace Cloud Databases</productname>
-	<pubdate>2012-10-29</pubdate>
+	<pubdate>2012-11-15</pubdate>
         <legalnotice role="rs-api">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
@@ -39,6 +39,15 @@
 				Interface (<abbrev>API</abbrev>). </para>
         </abstract>
     	<revhistory>
+			<revision security="internal">
+				<date>2012-11-15</date>
+				<revdescription>
+					<para xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml"
+						>Updated for MySQL my.cnf changes.</para>
+				</revdescription>
+			</revision>
 			<revision security="internal">
 				<date>2012-10-29</date>
 				<revdescription>
@@ -116,6 +125,88 @@
 			previous versions. The most recent changes are described
 			in the table below:</para>
 		<?rax revhistory?>
+	</chapter>
+	<chapter xml:id="cdbv1.0.14b" security="internal" >
+		<title>v1.0.14, November 15, 2012</title>
+		<para>This is not a code release, but rather configuration changes
+			for the v1.0.14 release.</para>
+		<itemizedlist spacing="compact">
+			<title>What's New</title>
+			<listitem security="writeronly">
+				<para>The maximum number of instances allowed per
+					account has been increased to 25 (see <link
+						xlink:href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Absolute_Limits-d1e1397.html"
+						>http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Absolute_Limits-d1e1397.html</link>
+					for details).</para>
+			</listitem>
+			<listitem>
+				<para>my.cnf config change in dbaas-mysql pkg to
+					include skip_name_resolve.</para>
+			</listitem>
+			<listitem security="writeronly">
+				<para><link security="internal"
+						xlink:href="https://www15.v1host.com/RACKSPCE/story.mvc/Summary?oidToken=Story%3A39981"
+						>B-06080: </link>global auth for mgmt
+					api.</para>
+			</listitem>
+		</itemizedlist>
+		<itemizedlist spacing="compact" security="writeronly">
+			<title>Bug Fixes</title>
+			<listitem security="writeronly">
+				<para><link security="internal"
+					xlink:href="https://www15.v1host.com/RACKSPCE/story.mvc/Summary?oidToken=Story%3A273838"
+						>B-27793: </link>reddwarf-style messaging.</para>
+			</listitem>
+			<listitem security="writeronly">
+				<para><link security="internal"
+					xlink:href="https://www15.v1host.com/RACKSPCE/defect.mvc/Summary?oidToken=Defect%3A387642"
+						>D-08603: </link>reddwarf-decepticon fix where usage event start and end times are the same.</para>
+			</listitem>
+			<listitem security="writeronly">
+				<para><link security="internal"
+					xlink:href="https://www15.v1host.com/RACKSPCE/defect.mvc/Summary?oidToken=Defect%3A441976"
+					>D-09562: </link>yagi-event issue with non-escaped characters (and bug) (fixed by reddwarf-style messaging).</para>
+			</listitem>
+		</itemizedlist>
+		<itemizedlist spacing="compact">
+			<title>Resources</title>
+			<listitem>
+				<para> Get started using the Cloud Databases API to
+					create databases in the <emphasis role="italic"
+						>Getting Started Guide</emphasis> at: <link
+						xlink:href="http://docs.rackspace.com/api/"
+						xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml"
+						>http://docs.rackspace.com/api/</link>.</para>
+			</listitem>
+			<listitem>
+				<para> Get reference information and examples in
+						the <emphasis role="italic">Cloud Databases
+						Developer Guide</emphasis> at: <link
+						xlink:href="http://docs.rackspace.com/api/"
+						xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml"
+						>http://docs.rackspace.com/api/</link>.</para>
+			</listitem>
+			<listitem>
+				<para> Support for Cloud Databases is available for US
+					and UK customers 24x7x365 via phone, chat, or you
+					may also <link
+						xlink:href="https://manage.rackspacecloud.com/Tickets/YourTickets.do"
+						xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml">File
+						a Ticket</link>.</para>
+			</listitem>
+			<listitem>
+				<para> Please visit our <link
+						xlink:href="http://feedback.rackspacecloud.com/forums/71021-product-feedback/category/42449-cloud-databases"
+						>Product Feedback Forum</link> and let us know
+					what you think about Cloud Databases! </para>
+			</listitem>
+		</itemizedlist>
 	</chapter>
 	<chapter xml:id="cdbv1.0.14" security="internal">
 		<title>v1.0.14, October 29, 2012 </title>

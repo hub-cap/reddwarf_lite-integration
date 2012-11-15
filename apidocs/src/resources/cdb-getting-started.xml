@@ -47,13 +47,28 @@
         </copyright>
         <releaseinfo>API v1.0</releaseinfo>
         <productname>Rackspace Cloud Databases</productname>
-        <pubdate>2012-10-29</pubdate>
+        <pubdate>2012-11-15</pubdate>
         <legalnotice role="rs-api">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
             </annotation>
         </legalnotice>
         <revhistory>
+            <revision>
+                <date>2012-11-15</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para>Fixed broken link (<link
+                                   xlink:href="http://www.rackspace.co.uk"
+                                   >http://www.rackspace.co.uk</link>)
+                                in <xref
+                                   linkend="Generating_Auth_Token"
+                                />.</para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
             <revision>
                 <date>2012-10-29</date>
                 <revdescription>
@@ -426,8 +441,8 @@
             </listitem>
             <listitem>
                 <para> If your account was created via <link
-                        xlink:href="http:/www.rackspace.co.uk"
-                        >http:/www.rackspace.co.uk</link>, it is a
+                        xlink:href="http://www.rackspace.co.uk"
+                        >http://www.rackspace.co.uk</link>, it is a
                     UK-based account. </para>
             </listitem>
         </itemizedlist>

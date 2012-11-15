@@ -372,7 +372,7 @@
             <note><para>After instance creation, the <code>used</code> size of your volume will be
                 greater than 0. This is expected and due to the automatic creation of
                 non-empty transaction logs for mysql optimization. The <code>used</code> attribute is <emphasis>not</emphasis> returned 
-                in the response when the status for the instance is BUILD, REBOOT, or RESIZE.</para> </note>
+                in the response when the status for the instance is BUILD, REBOOT, RESIZE, or ERROR.</para> </note>
             <para>Refer to <xref linkend="database_instance_status"/> for a list of possible database instance statuses that may be returned.</para>
             <para>The list operations return a DNS-resolvable hostname associated with the database instance instead of an IP address. Since the hostname always resolves to the correct IP address of the database instance, this relieves the user from the task of maintaining the mapping. Note that although the IP address may likely change on resizing, migrating, and so forth, the hostname always resolves to the correct database instance.</para>
         </wadl:doc>
