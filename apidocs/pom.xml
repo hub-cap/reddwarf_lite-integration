@@ -28,6 +28,7 @@
 	      <!-- this is the Rackspace-internal service developer guide formerly known as ManagementAPISpec.xml -->			                      
 	      <includes>cdb-mgmt-devguide.xml</includes>
 	      <enableDisqus>intranet</enableDisqus>
+	      <security>internal</security>
 	      <feedbackEmail>mike.asthalter@rackspace.com</feedbackEmail>
 	    </configuration>
 	  </execution>
