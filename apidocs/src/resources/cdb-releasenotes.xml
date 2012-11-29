@@ -26,7 +26,7 @@
 		</copyright>
         <releaseinfo>API v1.0</releaseinfo>
     	<productname>Rackspace Cloud Databases</productname>
-	<pubdate>2012-11-15</pubdate>
+	<pubdate>2012-11-29</pubdate>
         <legalnotice role="rs-api">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
@@ -39,6 +39,15 @@
 				Interface (<abbrev>API</abbrev>). </para>
         </abstract>
     	<revhistory>
+			<revision>
+				<date>2012-11-29</date>
+				<revdescription>
+					<para xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml"
+						>Updated for v1.0.15.</para>
+				</revdescription>
+			</revision>
 			<revision security="internal">
 				<date>2012-11-15</date>
 				<revdescription>
@@ -125,6 +134,97 @@
 			previous versions. The most recent changes are described
 			in the table below:</para>
 		<?rax revhistory?>
+	</chapter>
+	<chapter xml:id="cdbv1.0.15">
+		<title>v1.0.15, November 29, 2012</title>
+		<itemizedlist spacing="compact">
+			<title>What's New</title>
+			<listitem>
+				<para>The maximum number of instances allowed per
+					account has been increased to 25 (see <link
+						xlink:href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Absolute_Limits-d1e1397.html"
+						>http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Absolute_Limits-d1e1397.html</link>
+					for details).</para>
+			</listitem>
+			<listitem>
+				<para><link security="internal"
+						xlink:href="https://www15.v1host.com/RACKSPCE/defect.mvc/Summary?oidToken=Defect%3A475738"
+						>D-10062: </link>Updated database instance
+					configurations to allow for greater CPU usage and
+					availability. This enhancement applies only to 2
+					and 4 GB instances.</para>
+			</listitem>
+			<listitem security="internal">
+				<para><link security="internal"
+						xlink:href="https://www15.v1host.com/RACKSPCE/story.mvc/Summary?oidToken=Story%3A273838"
+						>B-27793: </link>Updated the usage event
+					generation service to use the Red Dwarf common RPC
+					libraries.</para>
+			</listitem>
+			<listitem security="internal">
+				<para><link
+						xlink:href="https://www15.v1host.com/RACKSPCE/story.mvc/Summary?oidToken=Story%3A39981"
+						>B-06080: </link>Enabled Global Auth for the
+					Management API.</para>
+			</listitem>
+		</itemizedlist>
+		<itemizedlist spacing="compact" security="internal">
+			<title>Bug Fixes</title>
+			<listitem>
+				<para><link security="internal"
+						xlink:href="https://www15.v1host.com/RACKSPCE/defect.mvc/Summary?oidToken=Defect%3A387642"
+						>D-08603: </link>Updated usage event
+					generation logic to correctly update start and end
+					times, causing AtomHopper validation
+					issues.</para>
+			</listitem>
+			<listitem>
+				<para><link security="internal"
+						xlink:href="https://www15.v1host.com/RACKSPCE/defect.mvc/Summary?oidToken=Defect%3A373618"
+						>D-08340: </link>Restart usage event
+					generation service when message service is
+					restarted.</para>
+			</listitem>
+		</itemizedlist>
+		<itemizedlist spacing="compact">
+			<title>Resources</title>
+			<listitem>
+				<para> Get started using the Cloud Databases API to
+					create databases in the <emphasis role="italic"
+						>Getting Started Guide</emphasis> at: <link
+						xlink:href="http://docs.rackspace.com/api/"
+						xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml"
+						>http://docs.rackspace.com/api/</link>.</para>
+			</listitem>
+			<listitem>
+				<para> Get reference information and examples in
+						the <emphasis role="italic">Cloud Databases
+						Developer Guide</emphasis> at: <link
+						xlink:href="http://docs.rackspace.com/api/"
+						xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml"
+						>http://docs.rackspace.com/api/</link>.</para>
+			</listitem>
+			<listitem>
+				<para> Support for Cloud Databases is available for US
+					and UK customers 24x7x365 via phone, chat, or you
+					may also <link
+						xlink:href="https://manage.rackspacecloud.com/Tickets/YourTickets.do"
+						xmlns:svg="http://www.w3.org/2000/svg"
+						xmlns:m="http://www.w3.org/1998/Math/MathML"
+						xmlns:html="http://www.w3.org/1999/xhtml">File
+						a Ticket</link>.</para>
+			</listitem>
+			<listitem>
+				<para> Please visit our <link
+						xlink:href="http://feedback.rackspacecloud.com/forums/71021-product-feedback/category/42449-cloud-databases"
+						>Product Feedback Forum</link> and let us know
+					what you think about Cloud Databases! </para>
+			</listitem>
+		</itemizedlist>
 	</chapter>
 	<chapter xml:id="cdbv1.0.14b" security="internal" >
 		<title>v1.0.14, November 15, 2012</title>
