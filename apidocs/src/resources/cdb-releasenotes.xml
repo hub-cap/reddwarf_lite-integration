@@ -161,12 +161,6 @@
 					generation service to use the Red Dwarf common RPC
 					libraries.</para>
 			</listitem>
-			<listitem security="internal">
-				<para><link
-						xlink:href="https://www15.v1host.com/RACKSPCE/story.mvc/Summary?oidToken=Story%3A39981"
-						>B-06080: </link>Enabled Global Auth for the
-					Management API.</para>
-			</listitem>
 		</itemizedlist>
 		<itemizedlist spacing="compact" security="internal">
 			<title>Bug Fixes</title>
