@@ -62,7 +62,7 @@
         </copyright>
         <releaseinfo>API v1.0</releaseinfo>
         <productname>Rackspace Cloud Databases</productname>
-        <pubdate>2012-09-04</pubdate>
+        <pubdate>2012-11-15</pubdate>
         <legalnotice role="rs-api">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
@@ -76,6 +76,53 @@
         </abstract>
         
         <revhistory>
+            <revision>
+                <date>2012-11-15</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para>Updated note about the
+                                   <code>used</code> attribute for
+                                volumes also not being returned when
+                                the status is ERROR (refer to <xref
+                                   linkend="GET_getInstanceById__version___accountId__instances__instanceId__"
+                                /> ).</para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
+            <revision>
+                <date>2012-11-06</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para>The maximum number of instances
+                                allowed per account has been increased
+                                to 25 (refer to <xref
+                                   linkend="Absolute_Limits-d1e1397"
+                                />).</para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
+            <revision>
+                <date>2012-10-29</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para>Updated auth response examples
+                                (refer to <xref
+                                   linkend="Authentication-d1e647"
+                                />).</para>
+                        </listitem>
+                        <listitem>
+                            <para>Added <xref
+                                   linkend="synchro_vs_async_faults"
+                                />.</para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
             <revision>
                 <date>2012-09-04</date>
                 <revdescription>
@@ -137,8 +184,9 @@
         <para>this is a placeholder for the back cover</para>
     </cover>
     <raxm:metadata xmlns:raxm="http://docs.rackspace.com/api/metadata">
+      <raxm:displayname>API Developer Guide</raxm:displayname>
       <raxm:product version="v1.0">cdb</raxm:product>
-      <raxm:priority>2</raxm:priority>
+      <raxm:priority>20</raxm:priority>
     </raxm:metadata> 
     </info>
     <chapter xml:id="overview">
@@ -159,14 +207,10 @@
         <para>The following figure shows an
             overview of Cloud Databases Infrastructure: <informalfigure>
                 <mediaobject>
-                    <imageobject role="fo">
+                    <imageobject>
                         <imagedata
                             fileref="images/Cloud_DB_Infographic-1.svg"
                             contentwidth="6in"/>
-                    </imageobject>
-                    <imageobject role="html">
-                        <imagedata
-                            fileref="images/Cloud_DB_Infographic-1.png"/>
                     </imageobject>
                 </mediaobject>
             </informalfigure>
@@ -467,14 +511,15 @@
                     <programlistingco>
                         <areaspec>
                             <area xml:id="response.xml.namespaces" units="linecolumn" coords="7 9"/>
-                            <area xml:id="response.xml.token" units="linecolumn" coords="12 10"/>
-                            <area xml:id="response.xml.role" units="linecolumn" coords="14 12"/>
-                            <area xml:id="response.xml.catalog" units="linecolumn" coords="19 21"/>
-                            <area xml:id="response.xml.servicetype" units="linecolumn" coords="43 34"/>
-                            <area xml:id="response.xml.servicename" units="linecolumn" coords="43 54"/>
-                            <area xml:id="response.xml.region" units="linecolumn" coords="44 30"/>
-                            <area xml:id="response.xml.tenant" units="linecolumn" coords="45 66"/>
-                            <area xml:id="response.xml.url" units="linecolumn" coords="46 9"/>
+                            <area xml:id="response.xml.token" units="linecolumn" coords="15 10"/>
+                            <area xml:id="response.xml.dfltregion" units="linecolumn" coords="16 67"/>
+                            <area xml:id="response.xml.role" units="linecolumn" coords="17 12"/>
+                            <area xml:id="response.xml.catalog" units="linecolumn" coords="22 21"/>
+                            <area xml:id="response.xml.servicetype" units="linecolumn" coords="51 34"/>
+                            <area xml:id="response.xml.servicename" units="linecolumn" coords="51 54"/>
+                            <area xml:id="response.xml.region" units="linecolumn" coords="52 30"/>
+                            <area xml:id="response.xml.tenant" units="linecolumn" coords="53 66"/>
+                            <area xml:id="response.xml.url" units="linecolumn" coords="54 9"/>
                         </areaspec>
                         <programlisting language="xml"><xi:include href="samples/db-auth-20.xml" parse="text"/></programlisting>
                     </programlistingco>
@@ -488,13 +533,14 @@
                         <areaspec>
                             <area xml:id="response.json.namespaces" units="linecolumn" coords="200 1"/>
                             <area xml:id="response.json.token" units="linecolumn" coords="9 8"/>
-                            <area xml:id="response.json.role" units="linecolumn" coords="16 12"/>
-                            <area xml:id="response.json.catalog" units="linecolumn" coords="29 8"/>
-                            <area xml:id="response.json.servicetype" units="linecolumn" coords="102 16"/>
-                            <area xml:id="response.json.servicename" units="linecolumn" coords="101 16"/>
-                            <area xml:id="response.json.region" units="linecolumn" coords="94 24"/>
-                            <area xml:id="response.json.tenant" units="linecolumn" coords="91 24"/>
-                            <area xml:id="response.json.url" units="linecolumn" coords="92 24"/>
+                            <area xml:id="response.json.dfltregion" units="linecolumn" coords="16 45"/>
+                            <area xml:id="response.json.role" units="linecolumn" coords="17 12"/>
+                            <area xml:id="response.json.catalog" units="linecolumn" coords="30 8"/>
+                            <area xml:id="response.json.servicetype" units="linecolumn" coords="114 16"/>
+                            <area xml:id="response.json.servicename" units="linecolumn" coords="113 16"/>
+                            <area xml:id="response.json.region" units="linecolumn" coords="104 24"/>
+                            <area xml:id="response.json.tenant" units="linecolumn" coords="101 24"/>
+                            <area xml:id="response.json.url" units="linecolumn" coords="102 24"/>
                         </areaspec>	
                         <programlisting language="json"><xi:include href="samples/db-auth-20.json" parse="text"/>
                     </programlisting>
@@ -527,6 +573,17 @@
                             maximum possible lifespan but does not guarantee
                             that it will reach that lifespan. Clients are
                             encouraged to cache a token until it expires. </para>
+                        <para> </para>
+                    </callout>
+                    <callout arearefs="response.xml.dfltregion">
+                        <para> Users can be assigned a default region so that, when there is a 
+                            choice between multiple endpoints associated with a service in the 
+                            user's catalog, the endpoint for the user's default region will be 
+                            selected if it is available. In this example, the user's default 
+                            region is DFW and several of the services in the user's catalog 
+                            offer endpoints in that region and the ORD region; this user's work 
+                            will be directed to the DFW region whenever possible.
+                        </para>
                         <para> </para>
                     </callout>
                     <callout arearefs="response.xml.role">
@@ -1088,7 +1145,7 @@
                             <td colspan="1">Instances</td>
                             <td colspan="3">Maximum number of instances allowed
                                 for your account</td>
-                            <td colspan="1">5</td>
+                            <td colspan="1">25</td>
                         </tr>
                         <tr>
                             <td colspan="1">Volume Size</td>
@@ -1454,6 +1511,90 @@
 <xi:include href="samples/db-faults-itemNotFound.json" parse="text"/>
                     </programlisting>
             </example>
+            <section xml:id="synchro_vs_async_faults">
+                <title>Synchronous Versus Asynchronous
+                    Faults<?sbr?></title>
+                <para><emphasis>Synchronous</emphasis> faults occur at
+                    request time. When a synchronous fault occurs, the
+                    fault contains an HTTP error response code, a
+                    human readable message, and optional details about
+                    the error. The following Database API calls are
+                    synchronous and may produce synchronous faults:<itemizedlist spacing="compact">
+                        <listitem>
+                            <para>List Users</para>
+                        </listitem>
+                        <listitem>
+                            <para>List Instances</para>
+                        </listitem>
+                        <listitem>
+                            <para>List Instance Details by ID</para>
+                        </listitem>
+                        <listitem>
+                            <para>List Databases</para>
+                        </listitem>
+                        <listitem>
+                            <para>Enable Root User</para>
+                        </listitem>
+                        <listitem>
+                            <para>List Root-Enabled Status</para>
+                        </listitem>
+                        <listitem>
+                            <para>List Flavors</para>
+                        </listitem>
+                        <listitem>
+                            <para>List Versions</para>
+                        </listitem>
+                        <listitem>
+                            <para>List Version Details</para>
+                        </listitem>
+                    </itemizedlist></para>
+                <para><emphasis>Asynchronous</emphasis> faults occur
+                    in the background while an instance, database, or
+                    user is being built or an instance is executing an
+                    action. When an asynchronous fault occurs, the
+                    system places the instance, database, or user in
+                    an ERROR state and embeds the fault in the
+                    offending instance, database, or user. When an
+                    asynchronous fault occurs, the fault contains an
+                    HTTP error response code, a human readable
+                    message, and optional details about the error. The
+                    following Database API calls are asynchronous and
+                    may produce asynchronous faults:<itemizedlist
+                        spacing="compact">
+                        <listitem>
+                            <para>Create Instance</para>
+                        </listitem>
+                        <listitem>
+                            <para>Delete Instance</para>
+                        </listitem>
+                        <listitem>
+                            <para>Create Database</para>
+                        </listitem>
+                        <listitem>
+                            <para>Delete Database</para>
+                        </listitem>
+                        <listitem>
+                            <para>Create User</para>
+                        </listitem>
+                        <listitem>
+                            <para>Delete User</para>
+                        </listitem>
+                        <listitem>
+                            <para>Resize Volume</para>
+                        </listitem>
+                        <listitem>
+                            <para>Resize Instance</para>
+                        </listitem>
+                        <listitem>
+                            <para>Restart Instance</para>
+                        </listitem>
+                    </itemizedlist><note>
+                        <para>Note that an asynchronous operation, if
+                            it fails, may not give the user an error,
+                            and the operation can error out without a
+                            failure notification.</para>
+                    </note></para>
+            </section>
         </section>
         <section xml:id="database_instance_status">
             <title>Database Instance Status</title>
